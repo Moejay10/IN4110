@@ -1,4 +1,4 @@
-# IN3110-msismail: Problem solving with high-level language
+# IN4110: Problem solving with high-level language
 This is the repository for the course IN3110/IN4110 at the University of Oslo.
 The course provides an introduction to more advanced aspects of the scripting and programming language Python, e.g. object-oriented programming, regular expressions, interaction with the operating system, platform-independent code, efficient design of program systems with time-critical operations, extensions in compiled languages ​​such as C / C ++, data analysis and web programming. The course also provides a basic introduction to the scripting language Bash, testing and documentation of code, and version control system git. The course consists of six assignments, where you will find more information resting within each repository.
 
