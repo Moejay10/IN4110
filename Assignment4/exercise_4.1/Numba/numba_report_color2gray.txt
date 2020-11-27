@@ -1,0 +1,26 @@
+Last run date was 1/10/2020 at 16:45:40 
+
+
+#--------------------------------------------------------------------------#
+
+The picture used is the default size of ../rain.jpg which has size of (400, 600, 3) 
+
+
+| Time (s)         |   Run 1 |   Run 2 |   Run 3 |    Mean |
+|------------------+---------+---------+---------+---------|
+| numba_color2gray | 0.00146 | 0.00071 |  0.0007 | 0.00096 |
+
+#--------------------------------------------------------------------------#
+
+Average runtime running numba_color2gray after 3 runs: 0.00096 s 
+Average runtime running numba_color2gray is 490.76042 times faster than python_color2gray 
+Average runtime running numba_color2gray is 3.14583 times faster than numpy_color2gray 
+Timing performed using: time module
+
+#--------------------------------------------------------------------------#
+
+The advantage with numba is that it is easy to implement 
+and usually very little code change is required for the program to run. 
+
+The disadvantage with numba is that it works like a 'black box', 
+which can make it difficult to understand which in turn makes it harder to debug.

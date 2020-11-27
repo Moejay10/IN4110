@@ -1,0 +1,21 @@
+Fri Oct  2 13:12:42 2020    Function:snake_loop
+
+         5206 function calls in 0.534 seconds
+
+   Ordered by: internal time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.529    0.529    0.531    0.531 ../test_slow_rectangle.py:27(snake_loop)
+        1    0.003    0.003    0.003    0.003 {method 'rand' of 'numpy.random.mtrand.RandomState' objects}
+        1    0.002    0.002    0.002    0.002 {built-in method numpy.array}
+        1    0.000    0.000    0.534    0.534 <string>:1(<module>)
+     5198    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+        1    0.000    0.000    0.534    0.534 {built-in method builtins.exec}
+        1    0.000    0.000    0.003    0.003 ../test_slow_rectangle.py:4(random_array)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+
+
+The slowest time found by timeit method was 0.54056s 
+And by the manual time method the time was 0.52931s 
+Compared to cProfile method which is given above in line 3

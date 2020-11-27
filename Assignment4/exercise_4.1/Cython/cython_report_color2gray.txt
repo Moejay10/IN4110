@@ -1,0 +1,22 @@
+Last run date was 2/10/2020 at 10:37:21 
+
+
+#--------------------------------------------------------------------------#
+
+The picture used is the default size of ../rain.jpg which has size of (400, 600, 3) 
+
+
+| Time (s)          |   Run 1 |   Run 2 |   Run 3 |    Mean |
+|-------------------+---------+---------+---------+---------|
+| cython_color2gray | 0.00351 | 0.00295 | 0.00214 | 0.00287 |
+
+#--------------------------------------------------------------------------#
+
+Average runtime running cython_color2gray after 3 runs: 0.00287 s 
+Average runtime running cython_color2gray is 168.62718 times faster than python_color2gray 
+Average runtime running cython_color2gray is 0.97561 times slower than numpy_color2gray 
+Average runtime running cython_color2gray is 0.34146 times slower than numba_color2gray 
+Timing performed using: time module
+
+#--------------------------------------------------------------------------#
+

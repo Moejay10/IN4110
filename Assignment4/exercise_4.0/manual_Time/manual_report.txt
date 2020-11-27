@@ -1,0 +1,5 @@
+| Time module (s)   |   random_array |   snake_loop |    loop | Slowest Part   |
+|-------------------+----------------+--------------+---------+----------------|
+| Measurement 1     |        0.00192 |      0.55985 | 0.05313 | snake_loop     |
+| Measurement 2     |        0.00187 |      0.53996 | 0.05389 | snake_loop     |
+| Measurement 3     |        0.00182 |      0.54418 | 0.05544 | snake_loop     |

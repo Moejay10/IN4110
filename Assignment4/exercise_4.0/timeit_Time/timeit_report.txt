@@ -1,0 +1,18 @@
+| Timeit module (s)   |   random_array |   snake_loop |      loop | Slowest Part   |
+|---------------------+----------------+--------------+-----------+----------------|
+| Measurement 1       |     0.00919834 |     0.562167 | 0.055244  | snake_loop     |
+| Measurement 2       |     0.00211715 |     0.541545 | 0.0543622 | snake_loop     |
+| Measurement 3       |     0.00193452 |     0.542183 | 0.054807  | snake_loop     |
+
+#--------------------------------------------------------------------------#
+
+| Manual Time (s)   |   random_array |   snake_loop |    loop | Slowest Part   |
+|-------------------+----------------+--------------+---------+----------------|
+| Measurement 1     |        0.00179 |      0.53268 | 0.05091 | snake_loop     |
+| Measurement 2     |        0.00185 |      0.53655 | 0.05272 | snake_loop     |
+| Measurement 3     |        0.00184 |      0.53374 | 0.05202 | snake_loop     |
+
+#--------------------------------------------------------------------------#
+
+The slowest time found by timeit module was 0.56217s 
+Compared to 0.53655s found by manual timing

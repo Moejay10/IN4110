@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+
+<body>
+
+<p>
+
+<nav class="navbar navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="/">Home</a>
+  <a class="navbar-link" href="/plot">Plot</a>
+  <a class="navbar-link" href="/norway_plot">Map</a>
+  <a class="navbar-brand" href="/help">Help</a>
+</nav>
+
+
+
+<br><br>
+<main role="main" class="container">
+  <div class="jumbotron">
+	{% block body %}
+<!-- Here goes the content -->
+
+<h1> Assignment 6 </h1>
+  <h2> Web Programming and Data Analysis </h2>
+
+<br> In this assignment, we built a web-based visualization of
+the corona dataset made publicly available by Folkehelseinstituttet
+(FHI). </br> 
+
+<br>
+The data can be found on the following website 
+<a
+  href="https://www.fhi.no/sv/smittsomme-sykdommer/corona/dags--og-ukerapporter/dags--og-ukerapporter-om-koronavirus/">FHI</a>.
+</br>
+
+
+<br><br>
+
+<h3> Plot: </h3>
+By clicking the "Plot" button above, you will be directed to the plot page, where
+you will be able to plot the FHI data.
+
+<br><br>
+
+
+<h3> Map: </h3>
+By clicking the "Map" button above, you will be directed to a page, where the map of
+Norway visualizing the number of cases per 100K in every county has been
+plotted.
+
+<br><br>
+
+<h3> Help: </h3>
+By clicking the "Help" button above, you will be directed to the documentation
+and help page, which displays help for the methods that was implemented to generate
+the plots shown in the plot page.
+
+
+
+	{% endblock %}
+  </div>
+</main>
+
+</body>
+
+</html>
+

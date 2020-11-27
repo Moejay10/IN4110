@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<h1>Covid-19 Cases</h1>
+
+ <form action="plot" method="POST">
+
+<br> Choose Reports:<br>
+  <p>
+  <select name= reports method="GET" action="/">
+    {% for report in reports %}
+    <option value= "{{report}}" SELECTED>{{report}}</option>"
+    {% endfor %}
+  </select>
+  </p>
+
+
+
+<br> Choose County:<br>
+  <p>
+  <select name= counties method="GET" action="/">
+    {% for county in counties %}
+    <option value= "{{county}}" SELECTED>{{county}}</option>"
+    {% endfor %}
+  </select>
+  </p>
+
+  <br> Choose Case Type:<br>
+  <p>
+  <select name= cases method="GET" action="/">
+    {% for case in cases %}
+    <option value= "{{case}}" SELECTED>{{case}}</option>"
+    {% endfor %}
+  </select>
+  </p>
+
+
+  <br> Choose Date range: <br>
+ Start Date: 
+  <input type="text" name=start_date>
+  End Date:   
+  <input type="text" name=end_date>   
+
+  <br>
+  <input type="submit" value="Plot">
+  <br>
+
+
+ </form>
+
+{% endblock %}
+
+    

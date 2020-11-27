@@ -1,0 +1,7 @@
+tabulate
+datetime
+numpy
+pip>=19.3
+opencv-python
+numba
+cython

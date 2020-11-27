@@ -1,0 +1,17 @@
+Last run date was 1/10/2020 at 16:15:10 
+
+
+#--------------------------------------------------------------------------#
+
+The picture used is the default size of ../rain.jpg which has size of (400, 600, 3) 
+
+
+| Time (s)          |   Run 1 |   Run 2 |   Run 3 |    Mean |
+|-------------------+---------+---------+---------+---------|
+| numpy_color2sepia | 0.00747 | 0.00875 | 0.00738 | 0.00787 |
+
+#--------------------------------------------------------------------------#
+
+Average runtime running numpy_color2sepia after 3 runs: 0.00787 s 
+Average runtime running numpy_color2sepia is 290.45362 times faster than python_color2sepia 
+Timing performed using: time module

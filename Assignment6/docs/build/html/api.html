@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+
+<body>
+
+<p>
+
+<nav class="navbar navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="/">Home</a>
+  <a class="navbar-link" href="/plot">Plot</a>
+  <a class="navbar-link" href="/norway_plot">Map</a>
+  <a class="navbar-brand" href="/help">Help</a>
+</nav>
+
+
+
+<br><br>
+<main role="main" class="container">
+  <div class="jumbotron">
+	
+  <div class="section" id="module-web_visualization">
+<span id="documentation"></span><h1>Documentation<a class="headerlink" href="#module-web_visualization" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt id="web_visualization.help">
+<code class="sig-prename descclassname">web_visualization.</code><code class="sig-name descname">help</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#web_visualization.help" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the documentation page created by sphinx</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a rendered sphinx_index.html</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="web_visualization.norway_plot">
+<code class="sig-prename descclassname">web_visualization.</code><code class="sig-name descname">norway_plot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#web_visualization.norway_plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plots the map of Norway with the covid data</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a rendered template html file</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="web_visualization.show_plots">
+<code class="sig-prename descclassname">web_visualization.</code><code class="sig-name descname">show_plots</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#web_visualization.show_plots" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Start function that is initiated from the plot button, and</dt><dd><p>the function responds to POST request. The function takes input from the
+user and plots the data taken from the user on the web page.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>A function that renders the</dt><dd><p>web.html page that loads the plot page.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p>render_template() (function)</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="web_visualization.start">
+<code class="sig-prename descclassname">web_visualization.</code><code class="sig-name descname">start</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#web_visualization.start" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the inital page for the web-server</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a rendered template html file</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="web_visualization.start_plot">
+<code class="sig-prename descclassname">web_visualization.</code><code class="sig-name descname">start_plot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#web_visualization.start_plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Start function for the plot web page</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>A function that renders the</dt><dd><p>web.html page that loads the plot plage</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>render_template() (function)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<span class="target" id="module-functions"></span><dl class="py function">
+<dt id="functions.main">
+<code class="sig-prename descclassname">functions.</code><code class="sig-name descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#functions.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tests the implementation of the function get_html</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="functions.plot_both">
+<code class="sig-prename descclassname">functions.</code><code class="sig-name descname">plot_both</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">county</span></em>, <em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">plot</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#functions.plot_both" title="Permalink to this definition">¶</a></dt>
+<dd><p>Displays the number of reported cases and cumulative number of cases of
+covid in one plot. That means dual Y-axis. This means one y-axis (right-hand side) will refer to the Number of
+reported cases and the other y-axis (left-hand side) will refer to the Cumulative
+number of cases.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>county</strong> (<em>str</em>) – The name of the county to be plotted.</p></li>
+<li><p><strong>data</strong> (<em>DataFrame</em>) – The DataFrame of the loaded data which came from the .csv file.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="functions.plot_cumulative_cases">
+<code class="sig-prename descclassname">functions.</code><code class="sig-name descname">plot_cumulative_cases</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">county</span></em>, <em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">plot</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#functions.plot_cumulative_cases" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plots a line plot of the data given</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>county</strong> (<em>str</em>) – The name of the county to be plotted.</p></li>
+<li><p><strong>data</strong> (<em>DataFrame</em>) – The input data to be plotted</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="functions.plot_norway">
+<code class="sig-prename descclassname">functions.</code><code class="sig-name descname">plot_norway</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">plot</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#functions.plot_norway" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plots the map of Norway where the covid data is highlighted in each county</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>plot</strong> (<em>bool</em>) – A bool argument to decide if one shall plot or return figure</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Either plots the map of Norway or returns the figure</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>figure (altair)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="functions.plot_reported_cases">
+<code class="sig-prename descclassname">functions.</code><code class="sig-name descname">plot_reported_cases</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">county</span></em>, <em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">plot</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#functions.plot_reported_cases" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plots a bar plot of the data given</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>county</strong> (<em>str</em>) – The name of the county to be plotted.</p></li>
+<li><p><strong>data</strong> (<em>DataFrame</em>) – The input data to be plotted</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="functions.read_file">
+<code class="sig-prename descclassname">functions.</code><code class="sig-name descname">read_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">county</span></em>, <em class="sig-param"><span class="n">folder</span><span class="o">=</span><span class="default_value">'daily'</span></em>, <em class="sig-param"><span class="n">daterange</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#functions.read_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads the .csv file and loads the data into a pandas DataFrame.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>county</strong> (<em>str</em>) – The filename of the county to be loaded into a DataFrame.</p></li>
+<li><p><strong>folder</strong> (<em>str</em>) – The folder which contains data from the weekly or daily csv data.</p></li>
+<li><p><strong>daterange</strong> (<em>list</em>) – A list containing the start and end date for the date range specified, otherwise None if nothing specified.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The DataFrame of the loaded data which came from the .csv file.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>data (DataFrame)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+  </div>
+</main>
+
+</body>
+
+</html>

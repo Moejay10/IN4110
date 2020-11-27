@@ -1,0 +1,16 @@
+Last run date was 1/10/2020 at 16:34:57 
+
+
+#--------------------------------------------------------------------------#
+
+The picture used is the default size of ../rain.jpg which has size of (400, 600, 3) 
+
+
+| Time (s)          |   Run 1 |   Run 2 |   Run 3 |    Mean |
+|-------------------+---------+---------+---------+---------|
+| python_color2gray | 0.47396 | 0.47147 | 0.46972 | 0.47172 |
+
+#--------------------------------------------------------------------------#
+
+Average runtime running python_color2gray after 3 runs: 0.47172 s 
+Timing performed using: time module

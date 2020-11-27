@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+
+<body>
+
+<p>
+
+<nav class="navbar navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="/plot">Plot</a>
+  <a class="navbar-link" href="/">Home</a>
+  <a class="navbar-link" href="/norway_plot">Map</a>
+  <a class="navbar-link" href="/help">Help</a>
+</nav>
+
+<br><br>
+<main role="main" class="container">
+  <div class="jumbotron">
+	
+  <div class="section" id="welcome-to-web-programming-and-data-analysis-s-documentation">
+<h1>Documentation and Help<a class="headerlink"
+    href="#welcome-to-web-programming-and-data-analysis-s-documentation"title="Permalink to this headline"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+
+<br> For more information on running the scripts consult the README.md on the github
+repository. </br>
+
+
+<br> </br>
+
+
+
+<div class="section" id="functions">
+<span id="function"></span><h1> Functions<a class="headerlink" href="#module-functions" title="Permalink to this headline"></a></h1>
+<dl class="function">
+<dt id="functions">
+<code class="sig-prename descclassname"> functions.</code><code class="sig-name descname">read_file</code><span class="sig-paren">
+(</span><em class="sig-param">county</em><span class="sig-paren">, 
+</span><em class="sig-param">folder="daily"</em><span class="sig-paren">,
+</span><em class="sig-param">daterange=None</em><span class="sig-paren">)</span><a class="headerlink" href="#functions.read_file" title="Permalink to this definition"></a></dt> 
+<dd><p>
+
+  Reads the .csv file and loads the data into a pandas DataFrame. 
+
+<br> Args: </br>
+        county (str): The filename of the county to be loaded into a DataFrame.
+        folder (str): The folder which contains data from the weekly or daily
+        csv data.
+        daterange (list): A list containing the start and end date for the date
+        range specified, otherwise None if nothing specified.
+    
+<br> Returns: </br>
+        data (DataFrame): The DataFrame of the loaded data which came from the .csv file.
+    
+</p>
+</dd></dl>
+
+
+<dl class="function">
+<dt id="functions">
+<code class="sig-prename descclassname"> functions.</code><code class="sig-name
+  descname">plot_both</code><span class="sig-paren">
+(</span><em class="sig-param">county</em><span class="sig-paren">, 
+</span><em class="sig-param">data</em><span class="sig-paren">)</span><a class="headerlink" href="#functions.read_file" title="Permalink to this definition"></a></dt> 
+<dd><p>
+
+    Displays the number of reported cases and cumulative number of cases of
+    covid in one plot. That means dual Y-axis. This means one y-axis (right-hand side) will refer to the Number of
+    reported cases and the other y-axis (left-hand side) will refer to the Cumulative
+    number of cases.
+
+    <br> Args: </br>
+        county (str): The name of the county to be plotted. 
+        data (DataFrame): The DataFrame of the loaded data which came from the .csv file.
+
+ 
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="functions">
+<code class="sig-prename descclassname"> functions.</code><code class="sig-name
+  descname">plot_reported_cases</code><span class="sig-paren">
+(</span><em class="sig-param">county</em><span class="sig-paren">, 
+</span><em class="sig-param">data</em><span class="sig-paren">)</span><a class="headerlink" href="#functions.read_file" title="Permalink to this definition"></a></dt> 
+<dd><p>
+Plots a bar plot of the data given
+
+<br> Args: </br>
+        county (str): The name of the county to be plotted. 
+        data (DataFrame): The input data to be plotted
+    
+ 
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="functions">
+<code class="sig-prename descclassname"> functions.</code><code class="sig-name
+  descname">plot_cumulative_cases</code><span class="sig-paren">
+(</span><em class="sig-param">county</em><span class="sig-paren">, 
+</span><em class="sig-param">data</em><span class="sig-paren">)</span><a class="headerlink" href="#functions.read_file" title="Permalink to this definition"></a></dt> 
+<dd><p>
+
+Plots a line plot of the data given 
+    
+<br>    Args: </br>
+        county (str): The name of the county to be plotted. 
+        data (DataFrame): The input data to be plotted
+
+ 
+</p>
+</dd></dl>
+
+
+
+<br> </br>
+
+
+
+<div class="section" id="web_visualization">
+<span id=""></span><h1> Web Visualization<a class="headerlink"
+    href="#module-web_visualization" title="Permalink to this headline"></a></h1>
+<dl class="web_visualization">
+<dt id="web_visualization">
+<code class="sig-prename descclassname"> web_visualization.</code><code
+  class="sig-name descname">start</code><span class="sig-paren">()
+<dd><p>
+
+    Get the inital page for the web-server
+    
+    <br> Return: </br> 
+        a rendered template html file
+     
+
+   
+</p>
+</dd></dl>
+
+
+<dl class="web_visualization">
+<dt id="web_visualization">
+<code class="sig-prename descclassname"> web_visualization.</code><code
+  class="sig-name descname">help</code><span class="sig-paren">()
+<dd><p>
+
+    Get the documentation page created by sphinx.
+    
+    <br> Return: </br> 
+        a rendered sphinx_index.html file
+     
+
+ </p>
+</dd></dl>
+
+
+<dl class="web_visualization">
+<dt id="web_visualization">
+<code class="sig-prename descclassname"> web_visualization.</code><code
+  class="sig-name descname">start_plot</code><span class="sig-paren">()
+<dd><p>
+
+    Start function for the plot web page.
+    
+    <br> Return: </br> 
+        render_template() (function): A function that renders the web.html
+        page that loads the plot page
+ 
+
+ </p>
+</dd></dl>
+
+ </p>
+</dd></dl>
+
+
+<dl class="web_visualization">
+<dt id="web_visualization">
+<code class="sig-prename descclassname"> web_visualization.</code><code
+  class="sig-name descname">show_plots</code><span class="sig-paren">()
+<dd><p>
+
+    Start function that is initiated from the plot button, and the function
+    responds to POST request. The function takes input from the user and plots
+    the data taken from the user on the web page.
+    
+    <br> Return: </br> 
+        render_template() (function): A function that renders the web.html page
+        loads the plot page.
+ 
+
+ </p>
+</dd></dl>
+
+
+
+</main>
+
+
+</body>
+
+</html>
