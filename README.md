@@ -18,7 +18,11 @@ In this assignment we are introduced to Python, which is a programming language 
 In this assignment we are using Python to study images and creating an algorithm for turning ones colorful images of choice into a dramatic grayscale or nostalgic sepia image.
 
 
-## Assignment 5 - To Be Announced
+## Assignment 5 - Regular Expression & Web Scraping
+In this assignment we will be using regular expression to extract information from web sites and perform simple statistics and data visualization on the data extracted from there. 
 
 
-## Assignment 6 - To Be Announced
+## Assignment 6 - Web Programming & Data Analysis
+In this assignment, we will be building a web-based visualization of the corona dataset made publicly available by Folkehelseinstituttet
+(FHI). The data can be found on the following website https://www.fhi.no/sv/smittsomme-sykdommer/corona/dags--og-ukerapporter/
+dags--og-ukerapporter-om-koronavirus/.

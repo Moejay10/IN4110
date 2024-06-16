@@ -1,4 +1,5 @@
 # Assignment 5 - Regular Expressions & Web Scraping 
+In this assignment we will be using regular expression to extract information from the wiki page of the NBA 2020 season  and create some player statistics and display this information in different tabels and visualizations. 
 
 ## Exercise 5.1: Sending URL requests
 This folder contains a program that retrieves the html data from any URL.
