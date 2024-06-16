@@ -6,7 +6,7 @@ import pandas as pd
 import re
 import altair as alt
 import tempfile
-alt.renderers.enable('altair_viewer')
+alt.renderers.enable('html')
 
 from functions import read_file, plot_both, plot_reported_cases, plot_cumulative_cases, plot_norway
 

@@ -6,7 +6,7 @@ import datetime
 import pandas as pd
 import re
 import altair as alt
-alt.renderers.enable('altair_viewer')
+alt.renderers.enable('html')
 
 def main():
     """Tests the implementation of the function get_html
@@ -239,12 +239,12 @@ def plot_norway(plot=True):
     data = pd.read_csv('covidData/map_reports/map_Norway_covid19.csv')
 
     # Gets the topojson of norway counties from random github
-    counties = alt.topo_feature('https://raw.githubusercontent.com/deldersveld/topojson/master/countries/norway/norway-new-counties.json', 'Fylker')
+    counties = alt.topo_feature('https://raw.githubusercontent.com/robhop/fylker-og-kommuner/main/2020/Fylker-large.topojson', 'Fylker')
 
     
     # Define nearest selection (used for highlighting)
-    nearest = alt.selection(type="single", on="mouseover",
-            fields=["properties.navn"], empty="none")
+    nearest = alt.selection_point(on="mouseover",
+            fields=["properties.navn"], empty=True)
 
     # Plot the map
     fig = alt.Chart(counties).mark_geoshape().encode(
@@ -266,7 +266,7 @@ def plot_norway(plot=True):
             width=600,
             height=600,
             title="Number of cases per 100K in every county",
-    ).add_selection(
+    ).add_params(
             nearest
     )
     
