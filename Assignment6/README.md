@@ -1,7 +1,7 @@
 # Assignment 6 - Web Programming & Data Analysis 
 In this assignment, we built a web-based visualization of
 the corona dataset made publicly available by Folkehelseinstituttet (FHI).
-The data can be found on the following website https://www.fhi.no/sv/smittsomme-sykdommer/corona/dags--og-ukerapporter/28 dags--og-ukerapporter-om-koronavirus/.
+The data can be found on the following website https://www.fhi.no/sv/smittsomme-sykdommer/corona/dags--og-ukerapporter/28dags--og-ukerapporter-om-koronavirus/.
 
 
 ## Structure
