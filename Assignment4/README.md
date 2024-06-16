@@ -1,4 +1,6 @@
 # Assignment 4 - Image Analysis 
+In this assignment, we will make a program for turning colorful images
+into a dramatic grayscale or nostalgic sepia image.
 
 ## Exercise 4.0: Profiling
 This folder contains programs that profiles a specific code to figure
